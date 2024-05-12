@@ -1,0 +1,183 @@
+{
+  "mascotas":[
+       {
+         "id":"1",
+         "nombre_producto":"Bulldog Francés",
+         "imagen":"https://i.imgur.com/cNICb8i.png",
+         "tipo_mascota":"Perro",
+         "edad":"Adulto",
+         "precio":"Por definir"
+       },
+
+       {
+        "id":"2",
+        "nombre_producto":"Labrador Retriever",
+        "imagen":"https://i.imgur.com/VtGmMr2.png",
+        "tipo_mascota":"Perro",
+        "edad":"Adulto",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"3",
+        "nombre_producto":"Maine Coon",
+        "imagen":"https://i.imgur.com/AVoXCRW.png",
+        "tipo_mascota":"Gato",
+        "edad":"Adulto",
+        "precio":"Por definir"
+      },
+      {
+        "id":"4",
+        "nombre_producto":"Bengal",
+        "imagen":"https://i.imgur.com/flhmhnQ.png",
+        "tipo_mascota":"Gato",
+        "edad":"Adulto",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"5",
+        "nombre_producto":"Golden Retriever",
+        "imagen":"https://i.imgur.com/11B7pbM.png",
+        "tipo_mascota":"Perro",
+        "edad":"Joven",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"6",
+        "nombre_producto":"Scottish Fold",
+        "imagen":"https://i.imgur.com/p5tosBL.png",
+        "tipo_mascota":"Gato",
+        "edad":"Adulto",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"7",
+        "nombre_producto":"Schnauzer Miniatura",
+        "imagen":"https://i.imgur.com/CF0fqZE.png",
+        "tipo_mascota":"Perro",
+        "edad":"Adulto",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"8",
+        "nombre_producto":"Persa",
+        "imagen":"https://i.imgur.com/FGm943c.png",
+        "tipo_mascota":"Gato",
+        "edad":"Joven",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"9",
+        "nombre_producto":"Dálmata",
+        "imagen":"https://i.imgur.com/N3Ab0ci.png",
+        "tipo_mascota":"Perro",
+        "edad":"Adulto",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"10",
+        "nombre_producto":"Siamese",
+        "imagen":"https://i.imgur.com/amCjFxZ.png",
+        "tipo_mascota":"Gato",
+        "edad":"Joven",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"11",
+        "nombre_producto":"Chihuahua",
+        "imagen":"https://i.imgur.com/W0TSexE.png",
+        "tipo_mascota":"Perro",
+        "edad":"Joven",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"12",
+        "nombre_producto":"Sphynx",
+        "imagen":"https://i.imgur.com/PZmSCLF.png",
+        "tipo_mascota":"Gato",
+        "edad":"Adulto",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"13",
+        "nombre_producto":"Border Collie",
+        "imagen":"https://i.imgur.com/vqW7bwq.png",
+        "tipo_mascota":"Perro",
+        "edad":"Adulto",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"14",
+        "nombre_producto":"Ragdoll",
+        "imagen":"https://i.imgur.com/lTL1iUp.png",
+        "tipo_mascota":"Gato",
+        "edad":"Adulto",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"15",
+        "nombre_producto":"Hamster Sirio",
+        "imagen":"https://i.imgur.com/2LvdNLt.png",
+        "tipo_mascota":"Otro",
+        "edad":"Joven",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"16",
+        "nombre_producto":"Perico Australiano",
+        "imagen":"https://i.imgur.com/qmF6Euo.png",
+        "tipo_mascota":"Otro",
+        "edad":"Joven",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"17",
+        "nombre_producto":"Canario",
+        "imagen":"https://i.imgur.com/ceSv4Ll.png",
+        "tipo_mascota":"Otro",
+        "edad":"Joven",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"18",
+        "nombre_producto":"Hámster Roborowski",
+        "imagen":"https://i.imgur.com/hKlWxWW.png",
+        "tipo_mascota":"Otro",
+        "edad":"Joven",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"19",
+        "nombre_producto":"Budgerigar",
+        "imagen":"https://i.imgur.com/G8jePvi.png",
+        "tipo_mascota":"Otro",
+        "edad":"Joven",
+        "precio":"Por definir"
+      },
+
+      {
+        "id":"20",
+        "nombre_producto":"Tortuga de Orejas Rojas",
+        "imagen":"https://i.imgur.com/NU56YSp.png",
+        "tipo_mascota":"Otro",
+        "edad":"Joven",
+        "precio":"Por definir"
+        }
+
+    ]
+}

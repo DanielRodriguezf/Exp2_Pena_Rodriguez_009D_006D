@@ -14,6 +14,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     border: 2px solid rgb(255, 255, 255); 
+    border-radius: 20px;
 }
 
 #barra_titulo{
@@ -37,6 +38,15 @@ body{
 
 #info3{
     background-color: rgba(32, 182, 18, 0.836); 
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border: 2px solid rgb(255, 255, 255);
+}
+#registro{
+    background-color: rgba(28, 88, 23, 0.925); 
     color: rgb(0, 0, 0);
     padding-left: 20px;
     padding-right: 20px;
@@ -80,3 +90,55 @@ footer div p{
 .card{
     margin-bottom: 15px;
   }
+
+
+
+#boton,#Limpiar {
+    background-color: rgba(19, 63, 41, 0.795);
+    font-weight: bolder;
+    color: white; 
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    cursor: pointer; 
+}
+
+#boton:active, /*Con esto realizariamos el efecto para al hacer click se oscurezca el boton de la opcion*/
+#boton:focus {
+    background-color: rgba(155, 166, 197, 0.493); 
+}
+
+.form-control{
+    margin-bottom: 10px;
+}
+label{
+    clear:both;
+    float:left;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label.error {
+    color: red;
+    width: 200px;
+    font-size: 0.85em;
+    margin-top: -5px;
+    margin-bottom:10px;
+}
+
+.bi{
+    font-size: 25px;
+}
+#ojodiv{
+    background-color: rgb(187, 187, 187);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.producto-imagen {
+    width: 150px;
+    height: auto;
+}
+

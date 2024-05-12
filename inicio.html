@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/LosEstilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="image/png" href="img/logo.png">
@@ -17,7 +17,7 @@
               <span class="navbar-toggler-icon"></span>
           </button>
 
-              <a href="#" class="navvbar_brand" style="margin-right: 20px; margin-left: 20px;">
+              <a href="inicio.html" class="navvbar_brand" style="margin-right: 20px; margin-left: 20px;">
                   <img src="img/logo.png" width="80" height="80" style="margin-left: 20px;" >
               </a>
 
@@ -32,30 +32,32 @@
                 <li class="nav-item">
                   <a class="nav-link" href="Productos.html" style="color: rgb(255, 255, 255);"><b>Productos</b></a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Registrarse.html" style="color: rgb(255, 255, 255);"><b>Registrarse</b></a>
+                </li>
               </ul>
           </div>    
       </nav>
         <br>
-
-
+ 
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+        
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/carrusel/carruselnuevo1.png" class="d-block w-100">
             </div>
-          
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/carrusel.jpg" class="d-block w-100">
-              </div>
-              <div class="carousel-item">
-                <img src="img/carrusel21.jpg" class="d-block w-100">
-              </div>
-              <div class="carousel-item">
-                <img src="img/carrusel3.jpg" class="d-block w-100">
-              </div>
+            <div class="carousel-item">
+              <img src="img/carrusel/carruselnuevo2.png" class="d-block w-100">
             </div>
+            <div class="carousel-item">
+              <img src="img/carrusel/carruselnuevo3.png" class="d-block w-100">
+            </div>
+          </div>
           
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
@@ -63,10 +65,9 @@
             <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
-          </div>
-
+          </div> 
           <br>
-          <br>
+          
           <div class="row jumbotron" id="info">
             <div class="col-lg-6">
                 <div>
@@ -87,15 +88,12 @@
             </div>
         </div>
 
-
-            <br>
-            <br>
             <br>
             <div class="row jumbotron" id="info" >
                 <div class="col-lg-6" style="text-align: center;">
-                    <img src="img/fotolocal.png" class="img-fluid" width="300px" height="200">
+                    <img src="img/fotolocal.png" class="img-fluid" width="300px" height="200" style="margin-bottom: 15px;">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5" id="horario">
                     <div>
                         <h1><strong><b>Horario</strong></b></h1>
                         <p><strong>Nuestros horarios de atención:</strong></p>
@@ -108,8 +106,39 @@
                 </div>
             </div>
 
+            <br>
+            <div class="row jumbotron" id="registro">
+              <div class="col-lg-6">
+                  <div> 
+                      <h1 style="color: white;"><u><strong>¿Te gustaría evaluarnos?</strong></u></h1>
+                      <form action="evaluacion" id="evaluacion">
+                        <form id="mis-datos">
+                          <label for="nombre">Nombre: </label>
+                          <input type="text" id="nombre" name="nombre" required minlength="3"
+                              placeholder="Digite su nombre.." class="form-control">
+                              <br>
+                          
+                          <label for="correo">Correo electrónico: </label>
+                          <input type="email" id="correo" name="correo" required
+                              placeholder="Digite su correo.." class="form-control">
+                              <br>
+                          <label for="telefono">Número de teléfono: </label>
+                          <input type="text" id="telefono" name="telefono" required minlength="9"
+                                  placeholder="Digite su teléfono.." class="form-control">
+                  </div>
+              </div>
+              <div class="col-lg-6" style="padding-top: 50px;">
+                  <label for="comentario"><strong>Ingrese su comentario: </strong></label>
+                  <textarea id="comentario" name="comentario" class="form-control" placeholder="Evalue nuestra tienda de mascotas" style="height: 160px;"></textarea>
+                  <br>
+                  <button id="boton">Enviar</button>
+                  <input type="button" id="Limpiar" value="Limpiar" onclick="LimpiarEva()">
+                  <br><br>
+              </div>
+              </form>
+          </div>
+
     </main>
-    <br>
         <footer>
             <div class="row col-12">
                 <div class="col-lg-2">
@@ -124,13 +153,16 @@
                 <div class="col-lg-1">
                     <a href="Productos.html" id="linkFooter"><strong>Productos</strong></a>
                 </div>
+                <div class="col-lg-1">
+                  <a href="Registrarse.html" id="linkFooter"><strong>Registrarse</strong></a>
+              </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3" id="linkFooter">
     
                   <strong>Nuestro contacto</strong>
                   <br>
-                  <div class="row">
-                    <p style="color: black; font-weight: bold; font-size: 16px;"><i class="fas fa-map-marker-alt"></i> Av. Blanco encalada 521, Maipú</p>
+                  <div class="row" style="margin-top: 15px;">
+                    <p style="color: black; font-weight: bold; font-size: 16px;"><i class="fas fa-map-marker-alt"></i>La galaxia 1291, Maipú</p>
                 </div>
                 
                 <div class="row">
@@ -142,6 +174,9 @@
                 </div>
                 
         </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+        <script src="js/evaluacion.js"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

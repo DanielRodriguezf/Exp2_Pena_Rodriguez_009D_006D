@@ -17,23 +17,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-                <a href="#" class="navvbar_brand" style="margin-right: 20px; margin-left: 20px;">
+                <a href="inicio.html" class="navvbar_brand" style="margin-right: 20px; margin-left: 20px;">
                     <img src="img/logo.png" width="80" height="80" style="margin-left: 20px;" >
                 </a>
 
-            <div class="collapse navbar-collapse" id="opciones">   
-                <ul class="navbar-nav" style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
-                  <li class="nav-item">
-                    <a class="nav-link" href="inicio.html" style="color: rgb(255, 255, 255)"><b>Inicio</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Informacion.html" style="color: rgb(255, 255, 255);"><b>¿Quienes somos?</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Productos.html" style="color: rgb(255, 255, 255);"><b>Productos</b></a>
-                  </li>
-                </ul>
-            </div>    
+                <div class="collapse navbar-collapse" id="opciones">       
+                    <ul class="navbar-nav" style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
+                      <li class="nav-item">
+                        <a class="nav-link" href="inicio.html" style="color: rgb(255, 255, 255)"><b>Inicio</b></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Informacion.html" style="color: rgb(255, 255, 255);"><b>¿Quienes somos?</b></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Productos.html" style="color: rgb(255, 255, 255);"><b>Productos</b></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Registrarse.html" style="color: rgb(255, 255, 255);"><b>Registrarse</b></a>
+                      </li>
+                    </ul>
+                </div> 
         </nav>
         <br>
         <div class="row jumbotron" id="info">
@@ -86,6 +89,29 @@
 
             </div>
         </div>
+        <br>
+        <br>
+
+        <div class="container-fluid" id="info">
+            <div class="row jumbotron">
+                <div class="col-lg-6" style="padding-top: 15px; text-align: center;">
+                    <h2><strong>Acá puedes ver una referencia de en donde estamos ubicados.</strong></h2>
+                    <h3><strong>(La galaxia 1291, Maipú)</strong></h2>
+                    <br>
+                    <h1>¡<u>Te esperamos</u>!</h1>
+                    <br>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9" id="mapa">
+                        <div id="map"></div> <!-- Mapa dentro del contenedor -->
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        
+        
+        
         
 
         <br>
@@ -105,13 +131,16 @@
                 <div class="col-lg-1">
                     <a href="Productos.html" id="linkFooter"><strong>Productos</strong></a>
                 </div>
+                <div class="col-lg-1">
+                    <a href="Registrarse.html" id="linkFooter"><strong>Registrarse</strong></a>
+                </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3" id="linkFooter">
     
                   <strong>Nuestro contacto</strong>
                   <br>
                   <div class="row">
-                    <p style="color: black; font-weight: bold; font-size: 16px;"><i class="fas fa-map-marker-alt"></i> Av. Blanco encalada 521, Maipú</p>
+                    <p style="color: black; font-weight: bold; font-size: 16px;"><i class="fas fa-map-marker-alt"></i> La galaxia 1291, Maipú</p>
                 </div>
                 
                 <div class="row">
@@ -123,6 +152,9 @@
                 </div>
                 
         </footer>
+        <script src="js/funcionmapa.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6-i6Mxt1R2X4ZCEUydaLG5HO1Ze-Cb5w&libraries=places&callback=iniciarMapa"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

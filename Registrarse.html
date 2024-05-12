@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unete a nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/LosEstilos.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <style>
+        .error-control{
+            border:1px solid red;
+        }
+
+        label.error{
+            color: rgb(226, 48, 48);
+            width: 200px;
+            font-size: 0.85em;
+            margin-top:-5px;
+            margin-bottom:10px;
+        }
+
+        label.error[for="txtpass"] {
+            color: rgb(226, 48, 48);
+            width: 200px;
+            font-size: 0.85em;
+            margin-top:-5px;
+            margin-bottom:10px;
+        }
+
+        label.error[for="txtpass2"] {
+            color: rgb(226, 48, 48);
+            width: 200px;
+            font-size: 0.85em;
+            margin-top:-5px;
+            margin-bottom:10px;
+
+        }
+
+        button{
+            float:left;
+            clear:both;
+            width:150px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <main class="container">    
+        <nav class="navbar navbar-expand-sm  navbar-gray, menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones"
+            style="margin-left: 20px;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <a href="#" class="navvbar_brand" style="margin-right: 20px; margin-left: 20px;">
+                    <img src="img/logo.png" width="80" height="80" style="margin-left: 20px;" >
+                </a>
+
+            <div class="collapse navbar-collapse" id="opciones">   
+                <ul class="navbar-nav" style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="inicio.html" style="color: rgb(255, 255, 255)"><b>Inicio</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Informacion.html" style="color: rgb(255, 255, 255);"><b>¿Quienes somos?</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Productos.html" style="color: rgb(255, 255, 255);"><b>Productos</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Registrarse.html" style="color: rgb(255, 255, 255);"><b>Registrarse</b></a>
+                  </li>
+                </ul>
+            </div>    
+        </nav>
+        <br>
+        <div>
+          <div class="row jumbotron" id="info" style="text-align:center">
+            <div class="col-lg-12">
+                <div> 
+                    <h1><strong>Ingrese sus datos para registrarse</strong></h1>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row jumbtron">
+            <form id="registro">
+
+                <label for="nombre">Ingrese sus nombres y apellidos: </label>
+                <input type="text" id="nombre" name="nombre" required minlength="3"
+                    placeholder="Digite sus nombres y apellidos.." class="form-control">
+                
+                <label for="correo">Ingrese su correo electrónico: </label>
+                <input type="email" id="correo" name="correo" required
+                    placeholder="Digite su correo.." class="form-control">
+
+                    <label for="genero">Seleccione su género:</label>
+                    <select id="genero" name="genero" class="form-control">
+                        <option value="" disabled selected>Seleccione su género</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="otro">Otro</option>
+                    </select>
+    
+                <label for="telefono">Ingrese su numero de teléfono: </label>
+                <input type="text" id="telefono" name="telefono" required minlength="9"
+                        placeholder="Digite su teléfono.." class="form-control">
+                
+                <label for="fecha">Ingrese fecha de nacimiento: </label>
+                <input type="date" id="fecha" name="fecha" min="1940-01-01" required class="form-control">
+
+    
+                <label for="password" class="form-label">Ingrese su Contraseña:</label>
+
+                <div class="input-group">
+                    <input type="password" class="form-control" name="txtpass" id="txtpass" placeholder="Ingresa contraseña" minlength="8">
+                    <div class="input-group-append">
+                        <span onclick="VistaContraseña()" class="input-group-text" id="ojodiv">
+                            <i class="bi bi-eye" id="ver"></i>
+                            <i class="bi bi-eye-slash" id="ocultar" style="display: none;"></i>
+                        </span>
+                    </div>
+                </div>
+                <label for="txtpass" class="error" id="error"></label>
+    
+                <label for="password" class="form-label">Verifique su contraseña:</label>
+
+                <div class="input-group">
+                    <input type="password" class="form-control" name="txtpass2" id="txtpass2" placeholder="Ingrese nuevamente" minlength="8">
+                    <div class="input-group-append">
+                        <span onclick="VistaReContraseña()" class="input-group-text" id="ojodiv">
+                            <i class="bi bi-eye" id="ver2"></i>
+                            <i class="bi bi-eye-slash" id="ocultar2" style="display: none;"></i>
+                        </span>
+                    </div>
+                </div>
+                <label for="txtpass2" class="error" id="error"></label>
+                <br>
+                <button idstyle="margin-bottom: 15px; margin-top: 15px;" id="boton">Registrarse</button>
+                <br>
+                <br>
+                <br>
+
+                
+        
+            </form>
+        </div>
+
+        <br>
+        </main> 
+        <br>
+        <footer>
+            <div class="row col-12">
+                <div class="col-lg-2">
+                    <img src="img/logo.png"width="60px">
+                </div>
+                <div class="col-lg-1">
+                    <a href="inicio.html" id="linkFooter"><strong>Principal</strong></a>
+                </div>
+                <div class="col-lg-1">
+                    <a href="Informacion.html" id="linkFooter"><strong>¿Quienes somos?</strong></a>
+                </div>
+                <div class="col-lg-1">
+                    <a href="Productos.html" id="linkFooter"><strong>Productos</strong></a>
+                </div>
+                <div class="col-lg-1">
+                    <a href="Registrarse.html" id="linkFooter"><strong>Registrarse</strong></a>
+                </div>
+
+                <div class="col-lg-3">
+    
+                  <strong>Nuestro contacto</strong>
+                  <br>
+                  <div class="row">
+                    <p style="color: black; font-weight: bold; font-size: 16px;"><i class="fas fa-map-marker-alt"></i> La galaxia 1291, Maipú</p>
+                </div>
+                
+                <div class="row">
+                    <p style="color: black; font-weight: bold; font-size: 16px;"><i class="fa fa-phone"></i> +56 9 1234 5678</p>
+                </div>
+                <div class="row">
+                    <p style="color: black; font-weight: bold; font-size: 16px;"> <i class="far fa-envelope"></i> mascotascooby@gmail.com</p>
+                    <p style="color: black; font-weight: bold; font-size: 13px;"> &copy;Copyright Derechos reservados</p>
+                </div>
+                
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+        <script src="js/validacion.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
